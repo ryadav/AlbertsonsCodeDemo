@@ -12,7 +12,6 @@
 		18B9022F2B0750CF009684F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B9022D2B0750CF009684F1 /* Main.storyboard */; };
 		18B902312B0750D1009684F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B902302B0750D1009684F1 /* Assets.xcassets */; };
 		18B902342B0750D1009684F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B902322B0750D1009684F1 /* LaunchScreen.storyboard */; };
-		18B9023F2B0750D2009684F1 /* AlbertsonCodeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9023E2B0750D2009684F1 /* AlbertsonCodeDemoTests.swift */; };
 		18B902492B0750D2009684F1 /* AlbertsonCodeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B902482B0750D2009684F1 /* AlbertsonCodeDemoUITests.swift */; };
 		18B9024B2B0750D2009684F1 /* AlbertsonCodeDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9024A2B0750D2009684F1 /* AlbertsonCodeDemoUITestsLaunchTests.swift */; };
 		18B9025E2B075450009684F1 /* AbbreviationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9025D2B075450009684F1 /* AbbreviationModel.swift */; };
@@ -54,6 +53,9 @@
 		18B902942B0758B0009684F1 /* URLEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B902932B0758B0009684F1 /* URLEndPoint.swift */; };
 		18B902952B0758B0009684F1 /* URLEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B902932B0758B0009684F1 /* URLEndPoint.swift */; };
 		18B902962B0758B0009684F1 /* URLEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B902932B0758B0009684F1 /* URLEndPoint.swift */; };
+		18B902982B086E52009684F1 /* NetworkServiceLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B902972B086E52009684F1 /* NetworkServiceLayerTests.swift */; };
+		18B9029A2B086F5A009684F1 /* AbbreviationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B902992B086F5A009684F1 /* AbbreviationViewModelTests.swift */; };
+		18B9029C2B08700A009684F1 /* MockNetworkServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9029B2B08700A009684F1 /* MockNetworkServiceLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +84,6 @@
 		18B902332B0750D1009684F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B902352B0750D1009684F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B9023A2B0750D2009684F1 /* AlbertsonCodeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertsonCodeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18B9023E2B0750D2009684F1 /* AlbertsonCodeDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonCodeDemoTests.swift; sourceTree = "<group>"; };
 		18B902442B0750D2009684F1 /* AlbertsonCodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertsonCodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B902482B0750D2009684F1 /* AlbertsonCodeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonCodeDemoUITests.swift; sourceTree = "<group>"; };
 		18B9024A2B0750D2009684F1 /* AlbertsonCodeDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonCodeDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -99,6 +100,9 @@
 		18B9028B2B075866009684F1 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		18B9028F2B075884009684F1 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		18B902932B0758B0009684F1 /* URLEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndPoint.swift; sourceTree = "<group>"; };
+		18B902972B086E52009684F1 /* NetworkServiceLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceLayerTests.swift; sourceTree = "<group>"; };
+		18B902992B086F5A009684F1 /* AbbreviationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbbreviationViewModelTests.swift; sourceTree = "<group>"; };
+		18B9029B2B08700A009684F1 /* MockNetworkServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkServiceLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +166,9 @@
 		18B9023D2B0750D2009684F1 /* AlbertsonCodeDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				18B9023E2B0750D2009684F1 /* AlbertsonCodeDemoTests.swift */,
+				18B902972B086E52009684F1 /* NetworkServiceLayerTests.swift */,
+				18B902992B086F5A009684F1 /* AbbreviationViewModelTests.swift */,
+				18B9029B2B08700A009684F1 /* MockNetworkServiceLayer.swift */,
 			);
 			path = AlbertsonCodeDemoTests;
 			sourceTree = "<group>";
@@ -444,12 +450,14 @@
 				18B902912B075884009684F1 /* RequestModel.swift in Sources */,
 				18B902742B07572C009684F1 /* AppConstants.swift in Sources */,
 				18B902792B07577E009684F1 /* Debouncer.swift in Sources */,
-				18B9023F2B0750D2009684F1 /* AlbertsonCodeDemoTests.swift in Sources */,
 				18B902812B0757E8009684F1 /* NetworkService.swift in Sources */,
 				18B9026B2B075594009684F1 /* AbbreviationTableViewCell.swift in Sources */,
 				18B902892B07583E009684F1 /* NetworkService+Validation.swift in Sources */,
 				18B9028D2B075866009684F1 /* NetworkServiceProtocol.swift in Sources */,
+				18B9029C2B08700A009684F1 /* MockNetworkServiceLayer.swift in Sources */,
+				18B9029A2B086F5A009684F1 /* AbbreviationViewModelTests.swift in Sources */,
 				18B9025F2B075450009684F1 /* AbbreviationModel.swift in Sources */,
+				18B902982B086E52009684F1 /* NetworkServiceLayerTests.swift in Sources */,
 				18B9027D2B0757C9009684F1 /* Encodable+Utility.swift in Sources */,
 				18B902632B0754BC009684F1 /* AbbreviationViewModel.swift in Sources */,
 			);
