@@ -9,38 +9,38 @@ import Foundation
 
 protocol AbbreviationViewModelProtocol: AnyObject {
     var networkService: NetworkServiceProtocol { get }
-    var acromineModel: [AcromineModel] { get set }
-    var completion: (([AcromineModel]?, ServerError) -> ())? { get set }
-    func getAcromine(sf: String, lf: String)
+    var AbbreviationModel: [AbbreviationModel] { get set }
+    var completion: (([AbbreviationModel]?, ServerError) -> ())? { get set }
+    func getAbbreviation(sf: String, lf: String)
 }
 
 final class AbbreviationViewModel: AbbreviationViewModelProtocol {
     
     // MARK: - Variables
-    var acromineModel: [AcromineModel] = []
+    var AbbreviationModel: [AbbreviationModel] = []
     var networkService: NetworkServiceProtocol
-    var completion: (([AcromineModel]?, ServerError) -> ())?
+    var completion: (([AbbreviationModel]?, ServerError) -> ())?
     
     //MARK: - Init
-    init(acromineModel: [AcromineModel] = [],
+    init(AbbreviationModel: [AbbreviationModel] = [],
          networkService: NetworkServiceProtocol = NetworkService()
     ) {
-        self.acromineModel = acromineModel
+        self.AbbreviationModel = AbbreviationModel
         self.networkService = networkService
     }
     
     // MARK: - Methods
     
     /// Get data from cloud server
-    func getAcromine(sf: String, lf: String = "") {
+    func getAbbreviation(sf: String, lf: String = "") {
         if !sf.isEmpty {
-            let param = RequestModel.AcromineInfo(sf: sf, lf: lf)
+            let param = RequestModel.AbbreviationInfo(sf: sf, lf: lf)
             Task {
-                let result = await networkService.getAcromine(param: param)
+                let result = await networkService.getAbbreviation(param: param)
                 switch result {
                 case .success(let model):
                     if let model {
-                        self.acromineModel = model
+                        self.AbbreviationModel = model
                         
                         /// Send result to view with the help of completion block
                         if model.isEmpty {

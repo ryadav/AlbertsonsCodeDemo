@@ -30,10 +30,10 @@ class NetworkService: NetworkServiceProtocol {
     }
     
     // MARK: - Custom methods.
-    /// Acromine API call
-    func getAcromine(param: Encodable) async -> Result<[AcromineModel]?, ServerError> {
+    /// Abbreviation API call
+    func getAbbreviation(param: Encodable) async -> Result<[AbbreviationModel]?, ServerError> {
         guard
-            let request = prepareRequest(params: param, endpoint: URLEndPoint.ACROMINE)
+            let request = prepareRequest(params: param, endpoint: URLEndPoint.Abbreviation)
         else {
             return .failure(ResponseError.wrapperFailed)
         }

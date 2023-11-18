@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AcromineModel: Decodable {
+struct AbbreviationModel: Decodable {
     // MARK: - Variables
     let sf: String?
     let lfs: [LongFormModel]?

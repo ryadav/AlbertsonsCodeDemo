@@ -10,7 +10,7 @@ import Foundation
 enum AppConstants {
     /// Server URL
     static let serverURL = "http://www.nactem.ac.uk/"
-    static let acromineAPI = "software/acromine/dictionary.py"
+    static let AbbreviationAPI = "software/acromine/dictionary.py"
     
     /// API errors message
     static let noInternet = "Internet appears to be offline. Try again after some times"

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,13 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter Acronyms" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmS-WI-8UB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter an Abbreviation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmS-WI-8UB">
                                 <rect key="frame" x="10" y="69" width="373" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.270588249" green="0.60000002379999995" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Acronyms" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnp-ze-qn0">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Abbreviation" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnp-ze-qn0">
                                 <rect key="frame" x="10" y="103" width="373" height="34"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -31,10 +30,9 @@
                                     <action selector="textChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="XCz-T0-433"/>
                                 </connections>
                             </textField>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="5NM-Zl-wdm">
-                                <rect key="frame" x="342" y="118" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="color" red="0.090196078430000007" green="0.27166107820000002" blue="0.51234275979999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5NM-Zl-wdm">
+                                <rect key="frame" x="178" y="464" width="37" height="37"/>
+                                <color key="color" systemColor="viewFlipsideBackgroundColor"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5O-p7-9b2">
                                 <rect key="frame" x="10" y="473" width="373" height="19.333333333333314"/>
@@ -44,7 +42,8 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wkm-XA-QDu">
                                 <rect key="frame" x="10" y="157" width="373" height="651"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AcronymsTableViewCell" rowHeight="68" id="oH9-uD-ofk" customClass="AcronymsTableViewCell" customModule="AlbertsonCodeDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="373" height="68"/>
@@ -58,7 +57,7 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfr-Jp-y7A">
                                                             <rect key="frame" x="10" y="10.000000000000002" width="351" height="18.666666666666671"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -67,12 +66,12 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="HzO-L0-WxG"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="0.74509803921568629" green="0.8901960784313725" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="1VP-hP-B5u" secondAttribute="bottom" constant="7.3300000000000001" id="FAs-ud-Snb"/>
                                                         <constraint firstAttribute="trailing" secondItem="1VP-hP-B5u" secondAttribute="trailing" constant="10" id="MgM-Dj-pGN"/>
@@ -84,7 +83,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.74509805439999999" green="0.89019608500000003" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="0PR-7Q-ca0" firstAttribute="top" secondItem="lWw-w6-mUR" secondAttribute="top" constant="1" id="Jrp-rK-Fqr"/>
                                                 <constraint firstAttribute="trailing" secondItem="0PR-7Q-ca0" secondAttribute="trailing" constant="1" id="XuI-I3-RTc"/>
@@ -106,7 +105,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.40000003579999999" green="0.78823530669999997" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="wmS-WI-8UB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="6Zk-27-pCW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wmS-WI-8UB" secondAttribute="trailing" constant="10" id="AYz-2Q-rE1"/>
@@ -115,8 +114,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wnp-ze-qn0" secondAttribute="trailing" constant="10" id="GwV-Ke-x9p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wkm-XA-QDu" secondAttribute="bottom" constant="10" id="JYu-Gr-GOQ"/>
                             <constraint firstItem="wnp-ze-qn0" firstAttribute="top" secondItem="wmS-WI-8UB" secondAttribute="bottom" constant="10" id="agc-4a-pd8"/>
+                            <constraint firstItem="5NM-Zl-wdm" firstAttribute="centerX" secondItem="wkm-XA-QDu" secondAttribute="centerX" id="ecQ-EW-DIi"/>
                             <constraint firstItem="wkm-XA-QDu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="fWX-1c-npG"/>
                             <constraint firstItem="wnp-ze-qn0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="gQo-Yv-cC5"/>
+                            <constraint firstItem="5NM-Zl-wdm" firstAttribute="centerY" secondItem="wkm-XA-QDu" secondAttribute="centerY" id="iz2-yi-ZtW"/>
                             <constraint firstItem="V5O-p7-9b2" firstAttribute="centerY" secondItem="wkm-XA-QDu" secondAttribute="centerY" id="mAV-eE-QxM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wkm-XA-QDu" secondAttribute="trailing" constant="10" id="nm3-j4-BD0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V5O-p7-9b2" secondAttribute="trailing" constant="10" id="rr6-QF-Nb9"/>
@@ -136,8 +137,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

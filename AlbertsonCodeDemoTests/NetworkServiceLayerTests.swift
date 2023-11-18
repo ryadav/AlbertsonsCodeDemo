@@ -26,9 +26,9 @@ final class NetworkServiceLayerTests: XCTestCase {
         let expectation = XCTestExpectation(description: "Call API asynchronously.")
         
         // Act
-        let param = RequestModel.AcromineInfo(sf: "App", lf: "")
+        let param = RequestModel.AbbreviationInfo(sf: "App", lf: "")
         Task {
-            let result = await networkService.getAcromine(param: param)
+            let result = await networkService.getAbbreviation(param: param)
             switch result {
             case .success(let model):
                 if let model {
@@ -56,9 +56,9 @@ final class NetworkServiceLayerTests: XCTestCase {
         let expectation = XCTestExpectation(description: "Call API asynchronously.")
         
         // Act
-        let param = RequestModel.AcromineInfo(sf: "A", lf: "")
+        let param = RequestModel.AbbreviationInfo(sf: "A", lf: "")
         Task {
-            let result = await networkService.getAcromine(param: param)
+            let result = await networkService.getAbbreviation(param: param)
             switch result {
             case .success(let model):
                 if let model {

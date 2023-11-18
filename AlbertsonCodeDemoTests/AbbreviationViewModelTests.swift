@@ -28,13 +28,13 @@ final class AbbreviationViewModelTests: XCTestCase {
         mockNetworkService.expectations = expectation
         
         // Act
-        homeViewModel.getAcromine(sf: "APP")
+        homeViewModel.getAbbreviation(sf: "APP")
         wait(for: [expectation], timeout: 10.0)
         
         // Assert
-        XCTAssertTrue(mockNetworkService.getAcromineCalled)
-        XCTAssertNotNil(homeViewModel.acromineModel)
-        XCTAssertTrue(homeViewModel.acromineModel.count > 0)
+        XCTAssertTrue(mockNetworkService.getAbbreviationCalled)
+        XCTAssertNotNil(homeViewModel.AbbreviationModel)
+        XCTAssertTrue(homeViewModel.AbbreviationModel.count > 0)
     }
     
     func testAcronymData_Failure() {
@@ -48,12 +48,12 @@ final class AbbreviationViewModelTests: XCTestCase {
         mockNetworkService.expectations = expectation
         
         // Act
-        homeViewModel.getAcromine(sf: "A")
+        homeViewModel.getAbbreviation(sf: "A")
         wait(for: [expectation], timeout: 10.0)
         
         // Assert
-        XCTAssertTrue(mockNetworkService.getAcromineCalled)
-        XCTAssertTrue(homeViewModel.acromineModel.isEmpty)
+        XCTAssertTrue(mockNetworkService.getAbbreviationCalled)
+        XCTAssertTrue(homeViewModel.AbbreviationModel.isEmpty)
     }
 
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 enum RequestModel {
-    struct AcromineInfo: Encodable {
+    struct AbbreviationInfo: Encodable {
         let sf: String
         let lf: String
     }

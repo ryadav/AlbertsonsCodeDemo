@@ -11,6 +11,6 @@ import Foundation
 /// It will be used to handle API paths
 struct URLEndPoint {
     
-    /// Acromine API path
-    static let ACROMINE = AppConstants.serverURL + AppConstants.acromineAPI
+    /// Abbreviation API path
+    static let Abbreviation = AppConstants.serverURL + AppConstants.AbbreviationAPI
 }

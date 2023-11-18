@@ -52,17 +52,17 @@ class AbbreviationViewController: UIViewController {
             activityIndicator.startAnimating()
             emptyDataLabel.isHidden = true
             tableView.isHidden = true
-            getAcromineData(sf: textFieldValue)
+            getAbbreviationData(sf: textFieldValue)
         }
     }
     
-    func getAcromineData(sf: String) {
-        viewModelProtocol?.getAcromine(sf: sf, lf: "")
+    func getAbbreviationData(sf: String) {
+        viewModelProtocol?.getAbbreviation(sf: sf, lf: "")
     }
     
     func observedAcromynData() {
-        viewModelProtocol?.completion = { [weak self] (acromineModel, error) in
-            if let acromineModel, !acromineModel.isEmpty {
+        viewModelProtocol?.completion = { [weak self] (AbbreviationModel, error) in
+            if let AbbreviationModel, !AbbreviationModel.isEmpty {
                 DispatchQueue.main.async {
                     self?.updateUIAfterAPICall()
                     self?.tableView.isHidden = false
@@ -96,7 +96,7 @@ class AbbreviationViewController: UIViewController {
 
 extension AbbreviationViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.acromineModel.first?.lfs?.count ?? 0
+        return viewModel.AbbreviationModel.first?.lfs?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -104,7 +104,7 @@ extension AbbreviationViewController: UITableViewDataSource, UITableViewDelegate
             return UITableViewCell()
         }
         
-        if let data = viewModel.acromineModel.first?.lfs?[indexPath.row] {
+        if let data = viewModel.AbbreviationModel.first?.lfs?[indexPath.row] {
             cell.setUpDataOnCell(data: data)
         }
         

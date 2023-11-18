@@ -26,8 +26,8 @@ class AcronymsTableViewCell: UITableViewCell {
     
     // MARK: - Custom method
     func setUpDataOnCell(data: LongFormModel) {
-        sfLabel.text = "\(AppConstants.longForm) - \(data.lf ?? "")"
-        freqLabel.text = "\(AppConstants.frequency) - \(data.freq ?? 0)"
+       sfLabel.text = "\(AppConstants.longForm) - \(data.lf ?? "")"
+       freqLabel.text = "\(AppConstants.frequency) - \(data.freq ?? 0)"
     }
 }
 

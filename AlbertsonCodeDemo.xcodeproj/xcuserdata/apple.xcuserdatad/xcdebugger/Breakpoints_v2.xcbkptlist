@@ -7,65 +7,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "820F2F54-F47F-4AE0-A3E6-410D257F0132"
+            uuid = "89A8904B-5861-489F-BE95-77E109F1F57F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlbertsonCodeDemo/Features/Abbreviation/ViewModel/AbbreviationViewModel.swift"
+            filePath = "AlbertsonCodeDemo/Utility/NetworkLayer/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "getAcromine(sf:lf:)"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "callAPIServer(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "820F2F54-F47F-4AE0-A3E6-410D257F0132 - f938596a021b7013"
+                  uuid = "89A8904B-5861-489F-BE95-77E109F1F57F - 2ce0fd6c84a9e0ae"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AlbertsonCodeDemo.HomeViewModel.getAcromine(sf: Swift.String, lf: Swift.String) -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for AlbertsonCodeDemo.NetworkService.callAPIServer&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(Foundation.URLRequest) async -&gt; Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;&#x3c4;_0_0&gt;&gt;, AlbertsonCodeDemo.NetworkService.ResponseError&gt;"
                   moduleName = "AlbertsonCodeDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/AlbertsonCodeDemo/AlbertsonCodeDemo/Features/Abbreviation/ViewModel/AbbreviationViewModel.swift"
+                  urlString = "file:///Users/apple/Documents/AlbertsonsCodeDemo/AlbertsonCodeDemo/Utility/NetworkLayer/NetworkService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "192">
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "216">
                </Location>
                <Location
-                  uuid = "820F2F54-F47F-4AE0-A3E6-410D257F0132 - c0915cb330e6e9a6"
+                  uuid = "89A8904B-5861-489F-BE95-77E109F1F57F - d5fe90f7722b0eb4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AlbertsonCodeDemo.AbbreviationViewModel.getAcromine(sf: Swift.String, lf: Swift.String) -&gt; ()"
+                  symbolName = "(2) await resume partial function for AlbertsonCodeDemo.NetworkService.callAPIServer&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(Foundation.URLRequest) async -&gt; Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;&#x3c4;_0_0&gt;&gt;, AlbertsonCodeDemo.NetworkService.ResponseError&gt;"
                   moduleName = "AlbertsonCodeDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/AlbertsonCodeDemo/AlbertsonCodeDemo/Features/Abbreviation/ViewModel/AbbreviationViewModel.swift"
+                  urlString = "file:///Users/apple/Documents/AlbertsonsCodeDemo/AlbertsonCodeDemo/Utility/NetworkLayer/NetworkService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "192">
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "89A8904B-5861-489F-BE95-77E109F1F57F - 680acf682ed0bcac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for AlbertsonCodeDemo.NetworkService.callAPIServer&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(Foundation.URLRequest) async -&gt; Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;&#x3c4;_0_0&gt;&gt;, AlbertsonCodeDemo.NetworkService.ResponseError&gt;"
+                  moduleName = "AlbertsonCodeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/AlbertsonsCodeDemo/AlbertsonCodeDemo/Utility/NetworkLayer/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "89A8904B-5861-489F-BE95-77E109F1F57F - c9872869e5efda93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for AlbertsonCodeDemo.NetworkService.callAPIServer&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(Foundation.URLRequest) async -&gt; Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;&#x3c4;_0_0&gt;&gt;, AlbertsonCodeDemo.NetworkService.ResponseError&gt;"
+                  moduleName = "AlbertsonCodeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/AlbertsonsCodeDemo/AlbertsonCodeDemo/Utility/NetworkLayer/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "84">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DE09599B-588F-456C-AFED-D81623026EB7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlbertsonCodeDemo/Features/Abbreviation/View/AbbreviationViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "getAcromineData(sf:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
