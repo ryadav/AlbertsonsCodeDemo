@@ -10,7 +10,7 @@ import Foundation
 /// URL End Point
 /// It will be used to handle API paths
 struct URLEndPoint {
-    
+
     /// Abbreviation API path
     static let Abbreviation = AppConstants.serverURL + AppConstants.AbbreviationAPI
 }

@@ -10,7 +10,7 @@ import Foundation
 typealias ServerError = NetworkService.ResponseError
 
 extension NetworkService {
-    
+
     /// The network response related error has been declared here.
     enum ResponseError: Error {
         case noInternet
@@ -23,8 +23,7 @@ extension NetworkService {
         case tryCatch(Error)
         case emptyData
         case none
-        
-        
+
         /// `String` represents the error in detail.
         var message: String {
             switch self {

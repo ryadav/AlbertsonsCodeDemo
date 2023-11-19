@@ -13,22 +13,22 @@ import Foundation
 /// Handling API errors
 
 class NetworkService: NetworkServiceProtocol {
-    
+
     // MARK: - Variables
     /// Optional `URLSession` used to perform the network request.
     let urlSession: URLSession?
-    
+
     /// An enum for various HTTPMethod.
     enum HTTPMethod: String {
         case get     = "GET"
         case post    = "POST"
     }
-    
+
     // MARK: - Initializer
     init(_ session: URLSession = URLSession.shared) {
         self.urlSession = session
     }
-    
+
     // MARK: - Custom methods.
     /// Abbreviation API call
     func getAbbreviation(param: Encodable) async -> Result<[AbbreviationModel]?, ServerError> {
@@ -42,9 +42,9 @@ class NetworkService: NetworkServiceProtocol {
 }
 
 extension NetworkService {
-    
+
     typealias HTTPType = NetworkService.HTTPMethod
-    
+
     /// A request preparation
     /// - Parameters:
     ///   - params: `P` represents generic suits for most of the request.
@@ -75,7 +75,7 @@ extension NetworkService {
         ]
         return request
     }
-    
+
     /// Creates the query param based URL information.
     /// - Parameters:
     ///   - url: `URL` represents the endpoint url.
@@ -93,7 +93,7 @@ extension NetworkService {
         }
         return nil
     }
-    
+
     /// Service request and response router gateway
     /// - Parameter urlRequest: `URLRequest` represents the connectoin
     /// - Returns: `Result` that has success response and failure has error results within it.
@@ -103,10 +103,10 @@ extension NetworkService {
         else {
             return .failure(ResponseError.wrapperFailed)
         }
-        
+
         do {
             let (data, response) = try await urlSession.data(for: urlRequest)
-            
+
             if let error = response.errorAppeared {
                 return .failure(error)
             }
@@ -114,8 +114,7 @@ extension NetworkService {
             print(abc)
             let model = try JSONDecoder().decode([T].self, from: data)
             return .success(model)
-        }
-        catch {
+        } catch {
             return .failure(ResponseError.tryCatch(error))
         }
     }

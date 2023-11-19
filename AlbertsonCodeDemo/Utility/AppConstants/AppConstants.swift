@@ -11,7 +11,7 @@ enum AppConstants {
     /// Server URL
     static let serverURL = "http://www.nactem.ac.uk/"
     static let AbbreviationAPI = "software/acromine/dictionary.py"
-    
+
     /// API errors message
     static let noInternet = "Internet appears to be offline. Try again after some times"
     static let networkRespose = "Cloud server is not responding. Try again after some times"
@@ -23,7 +23,7 @@ enum AppConstants {
     static let tryCatch = "Error Occurred in Try-Catch block"
     static let emptyData = "Not found any data."
     static let none = "No error"
-    
+
     /// Tableview cell
     static let longForm = "Long Form"
     static let frequency = "Frequency"

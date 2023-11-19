@@ -21,10 +21,10 @@ final class NetworkServiceLayerTests: XCTestCase {
     func testAcronymAPICall_Success() {
         // Arrange
         let networkService = NetworkService()
-        
+
         // Create an expectation for an asynchronous task.
         let expectation = XCTestExpectation(description: "Call API asynchronously.")
-        
+
         // Act
         let param = RequestModel.AbbreviationInfo(sf: "App", lf: "")
         Task {
@@ -35,7 +35,7 @@ final class NetworkServiceLayerTests: XCTestCase {
                     // Assert
                     XCTAssertNotNil(model)
                     XCTAssertTrue(model.count > 0)
-                    
+
                     // Fulfill the expectation.
                     expectation.fulfill()
                 }
@@ -43,7 +43,7 @@ final class NetworkServiceLayerTests: XCTestCase {
                 XCTAssertNotNil(error)
             }
         }
-        
+
         // Wait for the expectation to fulfill or time out.
         wait(for: [expectation], timeout: 10.0)
     }
@@ -51,10 +51,10 @@ final class NetworkServiceLayerTests: XCTestCase {
     func testAcronymAPICall_Failure() {
         // Arrange
         let networkService = NetworkService()
-        
+
         // Create an expectation for an asynchronous task.
         let expectation = XCTestExpectation(description: "Call API asynchronously.")
-        
+
         // Act
         let param = RequestModel.AbbreviationInfo(sf: "A", lf: "")
         Task {
@@ -65,7 +65,7 @@ final class NetworkServiceLayerTests: XCTestCase {
                     // Assert
                     XCTAssertNotNil(model)
                     XCTAssertFalse(model.count > 0)
-                    
+
                     // Fulfill the expectation.
                     expectation.fulfill()
                 }
@@ -73,7 +73,7 @@ final class NetworkServiceLayerTests: XCTestCase {
                 XCTAssertNotNil(error)
             }
         }
-        
+
         // Wait for the expectation to fulfill or time out.
         wait(for: [expectation], timeout: 10.0)
     }

@@ -8,9 +8,9 @@
 import Foundation
 
 extension URLResponse {
-    
+
     typealias Error = NetworkService.ResponseError
-    
+
     var errorAppeared: Error? {
         if let httpsResponse = self as? HTTPURLResponse {
             let statusCode = httpsResponse.statusCode
